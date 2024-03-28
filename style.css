@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Tomorrow&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--Black, #000);
+}
+
+.top {
+  display: flex;
+  gap: 50px;
+  margin: 100px 123px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  color: var(--Aureolin, #f8ef00);
+  font-family: "Tomorrow", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.passwordgenerator {
+  display: flex;
+  width: 588px;
+  padding: 20px;
+  align-items: center;
+  border: 2px solid var(--Bright-Aqua, #00f0ff);
+  background: rgba(0, 240, 255, 0.1);
+  /* margin-left: 123px; */
+  justify-content: space-between;
+}
+
+.generatepassword {
+  cursor: pointer;
+}
+
+button {
+  width: 350px;
+  padding: 20px;
+  height: 64px;
+  background-color: #f8ef00;
+  color: var(--Black, #000);
+  font-family: "Tomorrow", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.numberofdigits {
+  color: var(--Aureolin, #f8ef00);
+  font-family: "Tomorrow", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.checkboxesleft,
+.checkboxesright {
+  display: flex;
+  color: var(--Alabaster, #fafafa);
+  font-family: "Tomorrow", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+}
+
+.checkboxesleft,
+.checkboxesright,
+.numberofdigits {
+  margin-left: 123px;
+  width: 50%;
+}
+
+.uppercase,
+.lowercase,
+.numbers,
+.symbols {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.checks {
+  appearance: none;
+  background-color: #000;
+  border: 1px solid #f8ef00;
+  height: 40px;
+  width: 40px;
+}
+
+.checks:checked {
+  background-color: #f8ef00;
+}
+
+label {
+  color: var(--Alabaster, #fafafa);
+  font-family: "Tomorrow", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+}
+
+.passwdhistory {
+  width: 100%;
+  text-align: center;
+  color: var(--Alabaster, #fafafa);
+  font-family: "Tomorrow", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.clearhistory {
+  color: var(--Alabaster, #fafafa);
+  font-family: "Tomorrow", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #f8ef00;
+  cursor: pointer;
+}
+
+/*********** Baseline, reset styles ***********/
+
+#range {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 25rem;
+}
+
+/* Removes default focus */
+
+#range:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+
+/* slider track */
+
+#range::-webkit-slider-runnable-track {
+  background-color: #00f0ff;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+
+#range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  margin-top: -4px;
+  /* Centers thumb on the track */
+  background-color: #f8ef00;
+  border-radius: 0px;
+  height: 1rem;
+  width: 1rem;
+}
+
+#range:focus::-webkit-slider-thumb {
+  outline: 3px solid #f8ef00;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+
+/* slider track */
+
+#range::-moz-range-track {
+  background-color: #00f0ff;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+
+#range::-moz-range-thumb {
+  background-color: #f8ef00;
+  border: none;
+  /*Removes extra border that FF applies*/
+  border-radius: 0px;
+  height: 1rem;
+  width: 1rem;
+}
+
+#range:focus::-moz-range-thumb {
+  outline: 3px solid #f8ef00;
+  outline-offset: 0.125rem;
+}
+
+#range:hover p {
+  display: block;
+  position: fixed;
+  overflow: hidden;
+}
+
+#range {
+  width: 90%;
+}
+
+.scorevalue {
+  width: 45px;
+  height: 45px;
+  background-color: #f8ef00;
+}
